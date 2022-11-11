@@ -74,7 +74,7 @@ body {
 
 .navbar__content ul li a {
     color: var(--red);
-    font-weight: 300;
+    font-weight: 700;
     text-decoration: none;
 }
 
@@ -115,7 +115,7 @@ body {
 }
 
 .main-content p:last-child {
-    font-weight: 100;
+    font-weight: 300;
     margin: 0;
     width: 60%;
 }

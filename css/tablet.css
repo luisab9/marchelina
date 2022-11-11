@@ -12,12 +12,20 @@
 }
 
 .side-content {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .side-content img {
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
     width: 90%;
+}
+
+.side-content div {
+    background: var(--yellow);
+    grid-column: 3 / 4;
+    height: 100%;
+    z-index: 1;
+    border-radius: 30px;
 }
 
 .side-content p {

@@ -18,6 +18,29 @@
     width: 60%;
 }
 
+.side-content {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 80px;
+}
+
+
+.side-content p {
+    display: none;
+}
+
+.side-content img {
+    grid-column: 1 / 4;
+    width: 90%;
+}
+
+.side-content div {
+    background: var(--yellow);
+    grid-column: 2 / 4;
+    height: 100%;
+    z-index: 1;
+    border-radius: 10px 0 0 10px;
+}
+
 .footer {
     justify-content: space-evenly;
     transform: translateX(100%);
