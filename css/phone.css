@@ -1,0 +1,91 @@
+.container {
+    grid-template-areas: "nav     nav"
+        "aside aside"
+        "section section"
+        "footer  footer";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+
+.navbar__content {
+    padding: 0;
+}
+
+.footer div {
+    justify-content: left;
+    width: 60%;
+}
+
+.footer {
+    justify-content: space-evenly;
+    transform: translateX(100%);
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.footer div:hover img {
+    transform: translateX(-40px) scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer div img {
+    transform: translateX(0px) scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+@keyframes footer {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.footer div:nth-child(1) {
+    transform: translateX(200px);
+
+    animation-name: footer-child;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.footer div:nth-child(2) {
+    transform: translateX(200px);
+
+    animation-name: footer-child;
+    animation-duration: 0.5s;
+    animation-delay: 3.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.footer div:nth-child(3) {
+    transform: translateX(200px);
+
+    animation-name: footer-child;
+    animation-duration: 0.5s;
+    animation-delay: 4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes footer-child {
+    0% {
+        transform: translateX(200px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.modal-content {
+    width: 90%;
+}
